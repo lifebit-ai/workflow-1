@@ -1,5 +1,5 @@
 process generate_random_table {
-    publishDir "results", mode: 'copy'
+    publishDir "${params.outdir}", mode: 'copy'
     container 'quay.io/lifebitaiorg/ubuntu:18.10'
 
     output:
